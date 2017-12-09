@@ -1,147 +1,148 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.ico">
 
-	<title>DTU RGMUN Special Edition 2018 EB Application</title>
+    <title>DTU RGMUN Special Edition 2018 EB Application</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-	<!-- CSS Files -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
 </head>
 
-<body>	
-	 <div class="image-container set-full-height" >
+<body>
+    <div class="image-container set-full-height">
 
-	    <!--   Big container   -->
-	    <div class="container">
-	        <div class="row">
-		        <div class="col-sm-8 col-sm-offset-2">
-		            <!--      Wizard container        -->
-		            <div class="wizard-container">
-		                <div class="card wizard-card" data-color="red" id="wizardProfile">
-		                    <form action="" method="">
-		                <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+        <!--   Big container   -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <!--      Wizard container        -->
+                    <div class="wizard-container">
+                        <div class="card wizard-card" data-color="red" id="wizardProfile">
+                            <form action="data.php" method="POST">
+                                <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
 
-		                    	<div class="wizard-header">
-		                        	<h3 class="wizard-title">
-		                        	   Executive Board Nomination
-		                        	</h3>
-									<h5>Use this form to apply to be a part of EB for RGMUN 2018 Special Edition</h5>
-		                    	</div>
-								<div class="wizard-navigation">
-									<ul>
-										<li><a href="#Details" data-toggle="tab">Personal Details</a></li> 
-										<li><a href="#Education" data-toggle="tab">Education Details</a></li> 
-										<li><a href="#MUN" data-toggle="tab">MUN Portfolio</a></li> 
-										<li><a href="#RGMUN" data-toggle="tab">Regarding Delhi RGMUN</a></li>
-			                        </ul>
-								</div>
+                                <div class="wizard-header">
+                                    <h3 class="wizard-title">
+                                        Executive Board Nomination
+                                    </h3>
+                                    <h5>Use this form to apply to be a part of EB for RGMUN 2018 Special Edition</h5>
+                                </div>
+                                <div class="wizard-navigation">
+                                    <ul>
+                                        <li><a href="#Details" data-toggle="tab">Personal Details</a></li>
+                                        <li><a href="#Education" data-toggle="tab">Education Details</a></li>
+                                        <li><a href="#MUN" data-toggle="tab">MUN Portfolio</a></li>
+                                        <li><a href="#RGMUN" data-toggle="tab">Regarding Delhi RGMUN</a></li>
+                                    </ul>
+                                </div>
 
-		                        <div class="tab-content">
-		                            <div class="tab-pane" href="#Details" id="Details">
-		                              <div class="row">
-		                                	<h4 class="info-text"> Let's start with the basic information about you.</h4>
-		                                	<div class="col-sm-6">
-												<div class="input-group">
-													<span class="input-group-addon">
+                                <div class="tab-content">
+                                    <div class="tab-pane" href="#Details" id="Details">
+                                        <div class="row">
+                                            <h4 class="info-text"> Let's start with the basic information about you.</h4>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">face</i>
 													</span>
-													<div class="form-group label-floating">
-			                                          <label class="control-label">First Name <small>(required)</small></label>
-			                                          <input name="firstname" type="text" class="form-control">
-			                                        </div>
-												</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-		                                		<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">First Name <small>(required)</small></label>
+                                                        <input name="firstname" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">record_voice_over</i>
 													</span>
-													<div class="form-group label-floating">
-													  <label class="control-label">Last Name <small>(required)</small></label>
-													  <input name="lastname" type="text" class="form-control">
-													</div>
-												</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-		                                		<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Last Name <small>(required)</small></label>
+                                                        <input name="lastname" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">email</i>
 													</span>
-													<div class="form-group label-floating">
-			                                            <label class="control-label">Email <small>(required)</small></label>
-			                                            <input name="email" type="email" class="form-control">
-			                                        </div>
-												</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-		                                		<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email <small>(required)</small></label>
+                                                        <input name="email" type="email" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">call</i>
 													</span>
-													<div class="form-group label-floating">
-			                                            <label class="control-label">Phone  <small>(with country code)</small></label>
-			                                            <input name="phonenumber" id="phonenumber" type="text" class="form-control">
-			                                        </div>
-			                                    </div>
-		                                	</div>
-		                            	</div>
-		                            </div>
-		                            <div class="tab-pane" href="#Education" id="Education">
-		                                <h4 class="info-text"> Some basic details about you </h4>
-		                                <div class="row">
-		                                	<div class="col-sm-6">
-												<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Phone  <small>(with country code)</small></label>
+                                                        <input name="phonenumber" id="phonenumber" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" href="#Education" id="Education">
+                                        <h4 class="info-text"> Some basic details about you </h4>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">face</i>
 													</span>
-													<div class="form-group label-floating">
-			                                          <label class="control-label">Institution/Workplace <small>(required)</small></label>
-			                                          <input id="institution-workplace" name="institutionworkplace" type="text" class="form-control">
-			                                        </div>
-												</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-		                                		<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Institution/Workplace <small>(required)</small></label>
+                                                        <input id="institution-workplace" name="institutionworkplace" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">record_voice_over</i>
 													</span>
-													<div class="form-group label-floating">
-													  <label class="control-label">Age <small>(required)</small></label>
-													  <input id="age" name="age" type="digits" class="form-control">
-													</div>
-												</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-		                                		<div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Age <small>(required)</small></label>
+                                                        <input id="age" name="age" type="digits" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">record_voice_over</i>
 													</span>
-													<div class="form-group label-floating">
-		                                            <label class="control-label">City</label>
-		                                            <input type="text" name="city" class="form-control">
-		                                        </div>
-												</div>
-		                                	</div>
-		                                    <div class="col-sm-6">
-		                                    <div class="input-group">
-													<span class="input-group-addon">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">City</label>
+                                                        <input type="text" name="city" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">record_voice_over</i>
 													</span>
-		                                        <div class="form-group label-floating">
-		                                            <label class="control-label">Country</label>
-	                                            	<select name="country" class="form-control">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Country</label>
+                                                        <select name="country" class="form-control">
 														<option disabled="" selected=""></option>
 														<option value="AFG">Afghanistan</option>
 														<option value="ALA">Aland Islands</option>
@@ -393,162 +394,177 @@
 														<option value="ZMB">Zambia</option>
 														<option value="ZWE">Zimbabwe</option>
 													</select>
-		                                        </div>
-		                                        </div>
-		                                    </div>
-		                                    <div class="col-sm-12">
-												<div class="input-group">
-													<span class="input-group-addon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
 														<i class="material-icons">face</i>
 													</span>
-													<div class="form-group label-floating">
-			                                          <label class="control-label">LinkedIn URL</label>
-			                                          <input id="linkedin" name="linkedin" type="url" class="form-control">
-			                                        </div>
-												</div>
-		                                	</div>
-		                               	</div>
-		                            </div>
-		                            <div class="tab-pane" href="#MUN" id="MUN">
-		                                <h4 class="info-text"> Help us know you better </h4>
-		                                <div class='row'>
-												<div class='col-md-5 col-sm-offset-1'>
-												<div class='form-group'>
-												<label for="delegate-experience">How many MUNs have you been a part of as a delegate?</label>
-												<input name="delegateexperience" id="delegate-experience" type="number" class="form-control">
-											</div>
-										</div>
-										<div class='col-md-5 '>
-												<div class='form-group'>
-												<label for="delegate-experience">How many MUNs have you been a part of as a member of the Executie Board</label>
-												<input name="delegateexperienceeb" id="delegate-experience-eb" type="number" class="form-control">
-											</div>
-										</div>
-								
-										<div class='col-md-10 col-sm-offset-1'>
-												<div class='form-group'>
-												<label for="achieve">List some of your previous MUN achivements(if any)</label>
-												<input name="achivements" id="achieve" type="text-area" class="form-control">
-											</div>
-										</div>
-										<div class='col-md-10 col-sm-offset-1'>
-												<div class='form-group'>
-												<label for="eb-experience">Provide link to your MUN resume in a PDF format (make sure it's publicly accesible)</label>
-												<input name="ebexperience" id="eb-experience" type="url" class="form-control">
-											</div>
-										</div>
-									</div>
-		                            </div>
-		                            <div class="tab-pane" id="RGMUN">
-		                              <div class="row">
-		                                	<h4 class="info-text"> Some responses for our consideration</h4>
-		                                	<div class="col-sm-12 ">
-		                                		<h6><strong><center>What are your commitee prefrences?</center></strong></h6>
-		                                	</div>
-		                                		<div class='col-sm-2 col-sm-offset-1' >
-													<div class="checkbox">
-														<label>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">LinkedIn URL</label>
+                                                        <input id="linkedin" name="linkedin" type="url" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" href="#MUN" id="MUN">
+                                        <h4 class="info-text"> Help us know you better </h4>
+                                        <div class='row'>
+                                            <div class='col-md-5 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="delegate-experience">How many MUNs have you been a part of as a delegate?</label>
+                                                    <input name="delegateexperience" id="delegate-experience" type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class='col-md-5 '>
+                                                <div class='form-group'>
+                                                    <label for="delegate-experience">How many MUNs have you been a part of as a member of the Executie Board</label>
+                                                    <input name="delegateexperienceeb" id="delegate-experience-eb" type="number" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class='col-md-10 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="achieve">List some of your previous MUN achivements(if any)</label>
+                                                    <input name="achivements" id="achieve" type="text-area" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class='col-md-10 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="eb-experience">Provide link to your MUN resume in a PDF format (make sure it's publicly accesible)</label>
+                                                    <input name="ebexperience" id="eb-experience" type="url" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="RGMUN">
+                                        <div class="row">
+                                            <h4 class="info-text"> Some responses for our consideration</h4>
+                                            <div class="col-sm-12 ">
+                                                <h6><strong><center>What are your commitee prefrences?</center></strong></h6>
+                                            </div>
+                                            <div class='col-sm-2 col-sm-offset-1'>
+                                                <div class="checkbox">
+                                                    <label>
 															<input class="has-validation required" type="checkbox" value="UNGA" name="nomination[category_list][]" id="nomination_category_list_unga">
 															UNGA
 														</label>
-													</div>
-												</div>
-												<div class='col-sm-2'>
-													<div class="checkbox">
-														<label>
+                                                </div>
+                                            </div>
+                                            <div class='col-sm-2'>
+                                                <div class="checkbox">
+                                                    <label>
 															<input class="has-validation required" type="checkbox" value="UNSC" name="nomination[category_list][]" id="nomination_category_list_unsc" />
 															UNSC
 														</label>
-													</div>
-												</div>
-												<div class='col-sm-2'>
-													<div class="checkbox">
-														<label>
+                                                </div>
+                                            </div>
+                                            <div class='col-sm-2'>
+                                                <div class="checkbox">
+                                                    <label>
 															<input class="has-validation required" type="checkbox" value="UNHRC" name="nomination[category_list][]" id="nomination_category_list_unhrc" />
 															UNHRC
 														</label>
-													</div>
-												</div>
-												<div class='col-sm-2'>
-													<div class="checkbox">
-														<label>
+                                                </div>
+                                            </div>
+                                            <div class='col-sm-2'>
+                                                <div class="checkbox">
+                                                    <label>
 															<input class="has-validation required" type="checkbox" value="IAEA" name="nomination[category_list][]" id="nomination_category_list_iaea" />
 															IAEA
 														</label>
-													</div>
-												</div>
-												<div class='col-sm-2'>
-													<div class="checkbox">
-														<label>
+                                                </div>
+                                            </div>
+                                            <div class='col-sm-2'>
+                                                <div class="checkbox">
+                                                    <label>
 															<input class="has-validation required" type="checkbox" value="UNGC" name="nomination[category_list][]" id="nomination_category_list_ungc" />
 															UNGC
 														</label>
-													</div>
-												</div>
-										<div class='col-sm-12 ' align="center">
-													<div class='form-group'>
-														<label for="nomination_preference">What is your preference for Executive Board position?</label>
-														<div class="radio">
-														<label class='radio-inline'>
+                                                </div>
+                                            </div>
+                                            <div class='col-sm-12 ' align="center">
+                                                <div class='form-group'>
+                                                    <label for="nomination_preference">What is your preference for Executive Board position?</label>
+                                                    <div class="radio">
+                                                        <label class='radio-inline'>
 														<input class="has-validation required" type="radio" value="Chair" name="nomination[preference]" id="nomination_preference_chair" />Chair
 														</label>
-														<label class='radio-inline'>
+                                                        <label class='radio-inline'>
 														<input class="has-validation required" type="radio" value="Vice Chair" name="nomination[preference]" id="nomination_preference_vice" />Vice Chair/Director
 														</label>
-														<label class='radio-inline'>													
+                                                        <label class='radio-inline'>													
 															<input class="has-validation required" type="radio" value="Rapporteur" name="nomination[preference]" id="nomination_preference_rapportuer" />Rapporteur
 														</label>
-													</div>
-													</div>
-												</div>
-										<div class='col-md-10 col-sm-offset-1'>
-											<div class='form-group'>
-												<label for="nomination_why">Why do you want to be a part of RGMUN DTU Special Edition?</label>
-												<input name="why" type="text-area" class="form-control">
-											</div>
-										</div>
-										<div class='col-md-10 col-sm-offset-1'>
-											<div class='form-group'>
-												<label for="nomination_agendas">Propose 3 agendas for the above choosen committe of your choice, revolving around our theme<bold> " Sustainable Development Goals: Fostering a Brighter future "</bold></label>
-												<input name="agendas" type="text-area" class="form-control">
-											</div>
-										</div>
-										<div class='col-md-10 col-sm-offset-1'>
-											<div class='form-group'>
-												<label for="nomination_relevance">Explain in detail why you think the agendas you chose are relevant.</label>
-												<input name="relevance" type="text-area" class="form-control">
-											</div>
-										</div>
-		                            </div>
-		                        </div>
-		                        <div class="wizard-footer">
-		                            <div class="pull-right">
-		                                <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next' />
-		                                <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
-		                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-md-10 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="nomination_why">Why do you want to be a part of RGMUN DTU Special Edition?</label>
+                                                    <input name="why" type="text-area" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class='col-md-10 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="nomination_agendas">Propose 3 agendas for the above choosen committe of your choice, revolving around our theme<bold> " Sustainable Development Goals: Fostering a Brighter future "</bold></label>
+                                                    <input name="agendas" type="text-area" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class='col-md-10 col-sm-offset-1'>
+                                                <div class='form-group'>
+                                                    <label for="nomination_relevance">Explain in detail why you think the agendas you chose are relevant.</label>
+                                                    <input name="relevance" type="text-area" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-footer">
+                                        <div class="pull-right">
+                                            <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next' />
+                                            <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
+                                        </div>
 
-		                            <div class="pull-left">
-		                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
-		                            </div>
-		                            <div class="clearfix"></div>
-		                        </div>
-		                    </form>
-		                </div>
-		            </div> <!-- wizard container -->
-		        </div>
-	        </div><!-- end row -->
-	    </div> <!--  big container -->
+                                        <div class="pull-left">
+                                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </form>
+                            </div>
+                        </div>
+                        <!-- wizard container -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!--  big container -->
 
 </body>
-	<!--   Core JS Files   -->
-    <script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Wizard -->
-	<script src="assets/js/material-bootstrap-wizard.js"></script>
 
-    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="assets/js/jquery.validate.min.js"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+<!-- script for finsihing form and calling api -->
+<script>
+    $("input[name='finish']").click(function(data) {
+        $.post("data.php", $("form").serialize(), function(event) {
+            console.log(event);
+        });
+
+
+    });
+</script>
 
 </html>
