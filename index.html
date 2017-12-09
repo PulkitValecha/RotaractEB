@@ -91,8 +91,8 @@
 														<i class="material-icons">call</i>
 													</span>
 													<div class="form-group label-floating">
-			                                            <label class="control-label">Phone  <small>(without country code)</small></label>
-			                                            <input name="phone" type="text" class="form-control">
+			                                            <label class="control-label">Phone  <small>(with country code)</small></label>
+			                                            <input name="phonenumber" id="phonenumber" type="text" class="form-control">
 			                                        </div>
 			                                    </div>
 		                                	</div>
@@ -118,8 +118,8 @@
 														<i class="material-icons">record_voice_over</i>
 													</span>
 													<div class="form-group label-floating">
-													  <label class="control-label">Level of Study <small>(required)</small></label>
-													  <input id="study-level" name="studyLevel" type="text" class="form-control">
+													  <label class="control-label">Age <small>(required)</small></label>
+													  <input id="age" name="age" type="digits" class="form-control">
 													</div>
 												</div>
 		                                	</div>
@@ -403,7 +403,7 @@
 													</span>
 													<div class="form-group label-floating">
 			                                          <label class="control-label">LinkedIn URL</label>
-			                                          <input id="linkedin" name="linkedin" type="text" class="form-control">
+			                                          <input id="linkedin" name="linkedin" type="url" class="form-control">
 			                                        </div>
 												</div>
 		                                	</div>
@@ -412,22 +412,29 @@
 		                            <div class="tab-pane" href="#MUN" id="MUN">
 		                                <h4 class="info-text"> Help us know you better </h4>
 		                                <div class='row'>
-												<div class='col-md-10 col-sm-offset-1'>
+												<div class='col-md-5 col-sm-offset-1'>
 												<div class='form-group'>
-												<label for="delegate-experience">What kind of previous MUN experience do you have as a delegate?</label>
-												<input name="delegateexperience" id="delegate-experience" type="text-area" class="form-control">
+												<label for="delegate-experience">How many MUNs have you been a part of as a delegate?</label>
+												<input name="delegateexperience" id="delegate-experience" type="number" class="form-control">
 											</div>
 										</div>
-										<div class='col-md-10 col-sm-offset-1'>
+										<div class='col-md-5 '>
 												<div class='form-group'>
-												<label for="eb-experience">How was your previous experience as a part of EB member?</label>
-												<input name="ebexperience" id="eb-experience" type="text-area" class="form-control">
+												<label for="delegate-experience">How many MUNs have you been a part of as a member of the Executie Board</label>
+												<input name="delegateexperienceeb" id="delegate-experience-eb" type="number" class="form-control">
 											</div>
 										</div>
+								
 										<div class='col-md-10 col-sm-offset-1'>
 												<div class='form-group'>
 												<label for="achieve">List some of your previous MUN achivements(if any)</label>
 												<input name="achivements" id="achieve" type="text-area" class="form-control">
+											</div>
+										</div>
+										<div class='col-md-10 col-sm-offset-1'>
+												<div class='form-group'>
+												<label for="eb-experience">Provide link to your MUN resume in a PDF format (make sure it's publicly accesible)</label>
+												<input name="ebexperience" id="eb-experience" type="url" class="form-control">
 											</div>
 										</div>
 									</div>
@@ -480,16 +487,16 @@
 												</div>
 										<div class='col-sm-12 ' align="center">
 													<div class='form-group'>
-														<label for="nomination_prefrence">What is your prefrence for Executive Board position?</label>
+														<label for="nomination_preference">What is your preference for Executive Board position?</label>
 														<div class="radio">
 														<label class='radio-inline'>
-														<input class="has-validation required" type="radio" value="Chair" name="nomination[prefrence]" id="nomination_prefrence_chair" />Chair
+														<input class="has-validation required" type="radio" value="Chair" name="nomination[preference]" id="nomination_preference_chair" />Chair
 														</label>
 														<label class='radio-inline'>
-														<input class="has-validation required" type="radio" value="Vice Chair" name="nomination[prefrence]" id="nomination_prefrence_vice" />Vice Chair
+														<input class="has-validation required" type="radio" value="Vice Chair" name="nomination[preference]" id="nomination_preference_vice" />Vice Chair/Director
 														</label>
-														<label class='radio-inline'>													teur		
-															<input class="has-validation required" type="radio" value="Rapporteur" name="nomination[prefrence]" id="nomination_prefrence_rapportuer" />Rappor
+														<label class='radio-inline'>													
+															<input class="has-validation required" type="radio" value="Rapporteur" name="nomination[preference]" id="nomination_preference_rapportuer" />Rapporteur
 														</label>
 													</div>
 													</div>
@@ -508,7 +515,7 @@
 										</div>
 										<div class='col-md-10 col-sm-offset-1'>
 											<div class='form-group'>
-												<label for="nomination_relevance">Explain in detail why do you think the agendas you chose are relevant</label>
+												<label for="nomination_relevance">Explain in detail why you think the agendas you chose are relevant.</label>
 												<input name="relevance" type="text-area" class="form-control">
 											</div>
 										</div>

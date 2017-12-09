@@ -46,10 +46,17 @@ $(document).ready(function(){
 
     // Code for the Validator
     var $validator = $('.wizard-card form').validate({
-		  rules: {
-		    firstname: {
+      rules: {
+        firstname: {
           required: true,
           minlength: 3
+        },
+        phonenumber: {
+            required: true,
+            customphone: true
+            },
+        agendas:{
+          required: true
         },
         studyLevel:{
           required: true
@@ -70,8 +77,8 @@ $(document).ready(function(){
         },
         idea_worth: {
           minlength: 3,
-		      required: true
-		    },
+          required: true
+        },
             nomineeFirstname: {
               required: true,
               minlength: 3
@@ -90,31 +97,23 @@ $(document).ready(function(){
               customemail: true
             },
             
-		    lastname: {
-		            required: true,
-		             minlength: 3
-		    },
-        nomineePhone: {
-              number: true,
-              minlength: 6,
+        lastname: {
+                required: true,
+                 minlength: 3
         },
-		    city:{
+        city:{
                 required: true,
             },
         country: {
               required: true,
             },
-        phone: {
-              required: true,
-              number: true,
-              minlength: 6,
-            },
+        
         },
 
         errorPlacement: function(error, element) {
             $(element).parent('div').addClass('has-error');
          }
-	});
+  });
 $.validator.addMethod("customcheck", function(value, elem, param) {
     if($(".nomination[category_list][]:checkbox:checked").length > 0){
        return true;
@@ -122,6 +121,17 @@ $.validator.addMethod("customcheck", function(value, elem, param) {
        return false;
    }
 },"You must select at least one!");
+
+$.validator.addMethod("customphone", function(value, elem)
+{
+  if($.trim($('phonenumber').val()).length == 0){
+            //show some error
+            return true;
+        }
+  else{
+    return /^\+[1-9]{1}[0-9]{3,14}$/.test(value);
+  }
+},"Incorrect phonenumber");
 $.validator.addMethod("customemail", 
     function(value, element) {
       if($.trim($('nomineeEmail').val()).length == 0){
@@ -137,17 +147,17 @@ $.validator.addMethod("customemail",
     "Incorrect, Email syntax"
 );
     // Wizard Initialization
-  	$('.wizard-card').bootstrapWizard({
+    $('.wizard-card').bootstrapWizard({
         'tabClass': 'nav nav-pills',
         'nextSelector': '.btn-next',
         'previousSelector': '.btn-previous',
 
         onNext: function(tab, navigation, index) {
-        	var $valid = $('.wizard-card form').valid();
-        	if(!$valid) {
-        		$validator.focusInvalid();
-        		return false;
-        	}
+          var $valid = $('.wizard-card form').valid();
+          if(!$valid) {
+            $validator.focusInvalid();
+            return false;
+          }
         },
 
         onInit : function(tab, navigation, index){
@@ -218,7 +228,7 @@ $.validator.addMethod("customemail",
 
             refreshAnimation($wizard, index);
         }
-  	});
+    });
 
 
     // Prepare the preview for profile picture
@@ -316,15 +326,15 @@ materialDesign = {
 }
 
 function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		clearTimeout(timeout);
-		timeout = setTimeout(function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}, wait);
-		if (immediate && !timeout) func.apply(context, args);
-	};
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    }, wait);
+    if (immediate && !timeout) func.apply(context, args);
+  };
 };
 
