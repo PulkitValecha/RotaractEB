@@ -20,6 +20,10 @@
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Files For Sweet Alert -->
+	<link href="https://rawgit.com/t4t5/sweetalert/master/dist/sweetalert.css" rel="stylesheet">
+
 </head>
 
 <body>	
@@ -561,12 +565,26 @@
 
 <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 <script src="assets/js/jquery.validate.min.js"></script>
+
+<!-- script for sweet alert on form submission -->
+<script src="assets/js/sweetalert.min.js"></script>
+
 <!-- script for finsihing form and calling api -->
 <script>
     $("input[name='finish']").click(function(data) {
         console.log($("form").serialize());
         $.post("data.php", $("form").serialize(), function(event) {
             console.log(event);
+
+            swal({
+                title: "Success",
+                text:"Your response has been recorded",
+                icon: "success"
+            }).then(
+                function(){
+                    window.location.href='index.html';
+                });
+
         });
 
 
