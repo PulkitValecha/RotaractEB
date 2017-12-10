@@ -559,6 +559,7 @@
 <!-- script for finsihing form and calling api -->
 <script>
     $("input[name='finish']").click(function(data) {
+        console.log($("form").serialize());
         $.post("data.php", $("form").serialize(), function(event) {
             console.log(event);
         });
