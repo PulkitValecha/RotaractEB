@@ -575,18 +575,16 @@
         console.log($("form").serialize());
         $.post("data.php", $("form").serialize(), function(event) {
             console.log(event);
-
-            swal({
-                title: "Success",
-                text:"Your response has been recorded",
-                icon: "success"
-            }).then(
-                function(){
-                    window.location.href='index.html';
-                });
-
         });
 
+        swal({
+            title: "Success",
+            text:"Your response has been recorded",
+            icon: "success"
+        }).then(
+            function(){
+                window.location.href='index.html';
+            });
 
     });
 </script>
